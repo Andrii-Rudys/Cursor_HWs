@@ -3,10 +3,10 @@ let backpack = 123.965;
 let sneakers = 90.2345;
 
 //1.
-let maxPrice = Math.min(gloves,backpack, sneakers);
+let maxPrice = Math.max (gloves,backpack, sneakers);
 
 //2.
-let minPrice = Math.max(gloves,backpack, sneakers);
+let minPrice = Math.min(gloves,backpack, sneakers);
 
 //3.
 let totalPrice = (gloves+backpack+sneakers);
