@@ -18,7 +18,7 @@ let totalRoundedPrice = Math.floor(gloves)+Math.floor(backpack)+ Math.floor(snea
 let hundredPrice = Math.round(totalPrice/100)*100;
 
 //6.
-let isOdd = totalRoundedPrice % 2 === 1;
+let isOdd = Math.floor(totalPrice) % 2 === 1;
 
 //7.
 let cash = 500;
