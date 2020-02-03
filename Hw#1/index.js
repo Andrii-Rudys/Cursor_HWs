@@ -23,10 +23,9 @@ let isOdd = totalRoundedPrice % 2 === 1;
 //7.
 let cash = 500;
 let rest = (cash - totalPrice);
-console.log(rest);
 
 //8.
-let PriceAverage = (totalPrice/3) .toFixed(2);
+let priceAverage = (totalPrice/3) .toFixed(2);
 
 //9.
 let randomDiscount = Math.random()*100;
@@ -42,7 +41,7 @@ let templateString = `Max price: ${maxPrice}
     Rounded to hundreds: ${hundredPrice}
     Is the price odd?: ${isOdd}
     The rest is: ${rest} uah
-    Average price: ${PriceAverage}
+    Average price: ${priceAverage}
     Discount price: ${priceWithDiscount}
     Profit: ${netIncome}`;
 console.log(templateString);
