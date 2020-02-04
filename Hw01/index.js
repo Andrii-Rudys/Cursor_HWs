@@ -15,7 +15,7 @@ let totalPrice = (gloves+backpack+sneakers);
 let totalRoundedPrice = Math.floor(gloves)+Math.floor(backpack)+ Math.floor(sneakers);
 
 //5.
-let hundredPrice = Math.round(totalPrice/100)*100;
+let hundredPrice = Math.ceil(totalPrice/100)*100;
 
 //6.
 let isOdd = Math.floor(totalPrice) % 2 === 1;
