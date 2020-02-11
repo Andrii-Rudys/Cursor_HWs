@@ -52,29 +52,18 @@ function countLetter(word, letter ) {
 }
 
 //10.
-function isPalindrome(str) {
-    let result = true;
-    const halfLength = Math.floor(str.length / 2);
+    function ispalindrome(str) {
+        let  word = str.toLowerCase().split(" ").join("");
+         return word.includes(word.split('').reverse().join(''))
 
-    for (let i = 0; i < halfLength; i++) {
-        const leftChar = str[i];
-        const rightChar = str[str.length - (i + 1)];
-
-        if (leftChar !== rightChar) {
-            return false;
-        }
-    }
-
-    return result;
 }
-
-    let funcList = `func. 1. ${getMaxDigit(3428976)};<br>
+let funcList = `func. 1. ${getMaxDigit(3428976)};<br>
 func. 2. ${getPow(2, 8)};<br>
 func. 3. ${getCorectName("ANdrushA")};<br>
 func. 4. ${getCleanSalary(37456)};<br>
 func. 5. ${getRandomInt(1, 34)};<br>
 func. 6. ${countLetter("contibution","t")};<br>
-func. 10.${isPalindrome("madam")}<br>`;
+fumc. 10. ${ispalindrome("Аргентина манит негра")}`;
 
 console.log(funcList);
 document.getElementById("divv").innerHTML = funcList;
