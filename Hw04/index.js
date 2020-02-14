@@ -7,7 +7,7 @@ function getByPairs (STUDENTS) {
     let studentsGirls = ["Лена", "Ира", "Светлана"];
     let studentsBoys = ["Саша", "Игорь", "Алексей"];
     let result = [];
-    for (let i = 1; i <=STUDENTS.length/2; i++) {
+    for (let i = 0; i < STUDENTS.length/2; i++) {
         result[i] = [studentsBoys[i], studentsGirls[i]];
     }
     return result;
@@ -18,7 +18,7 @@ console.log(PAIRS);
 //2.
 function chooseThems(PAIRS, THEMES) {
     let pairsWithThems = [];
-    for (let i = 1; i <= PAIRS.length; i++) {
+    for (let i = 0; i < PAIRS.length; i++) {
         pairsWithThems[i] = [PAIRS[i].join(" і "), THEMES[i]];
     }
     return pairsWithThems;
@@ -29,7 +29,7 @@ console.log(PAIRSWITHTHEMS);
 //3.
 function getMarks(STUDENTS, MARKS) {
     let studensMarks = [];
-    for (let i = 1; i <= STUDENTS.length; i++) {
+    for (let i = 0; i < STUDENTS.length; i++) {
         studensMarks[i] = [STUDENTS[i], MARKS[i]];
     }
     return studensMarks;
@@ -40,7 +40,7 @@ console.log(STUDENTSMARKS);
 //4.
 function getRandomMarks(PAIRSWITHTHEMS) {
     let pairsRandomMarks = [];
-    for(let i=1; i<=STUDENTS.length/2; i++) {
+    for(let i=0; i < STUDENTS.length/2; i++) {
         pairsRandomMarks[i] = [PAIRSWITHTHEMS[i], Math.floor(((Math.random() * 5) + 1))];
     }return pairsRandomMarks;
 }
