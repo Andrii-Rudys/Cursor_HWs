@@ -40,9 +40,9 @@ console.log(STUDENTSMARKS);
 //4.
 function getRandomMarks(PAIRSWITHTHEMS) {
     let pairsRandomMarks = [];
-    for(let i=0; i < STUDENTS.length/2; i++) {
-        pairsRandomMarks[i] = [PAIRSWITHTHEMS[i], Math.floor(((Math.random() * 5) + 1))];
-    }return pairsRandomMarks;
+    for(let i=0; i<STUDENTS.length/2; i++) {
+        pairsRandomMarks[i] = [PAIRSWITHTHEMS[i], Math.floor(((Math.random() * 5) + 1))].flat();
+    } return pairsRandomMarks;
 }
 const RANDOMMARKS = getRandomMarks(PAIRSWITHTHEMS);
 console.log(RANDOMMARKS);
