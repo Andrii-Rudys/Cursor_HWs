@@ -63,4 +63,4 @@ andrii.setMarks = 5;
 console.log(andrii.getMarks);
 console.log(andrii.getAverageMark());
 andrii.dismiss();
-console.log(andrii.recover());
+andrii.recover();

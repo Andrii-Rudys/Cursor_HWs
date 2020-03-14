@@ -29,14 +29,12 @@ function getTotalTaxes () {
 console.log(getTotalTaxes.call(litva));
 
 //4.
-function getMySalary(country) {
-    let maxSalary = 2000;
-    let minSalary = 1500;
-    let obj ={};
-    obj.salary = Math.floor(Math.random() * (maxSalary - minSalary + 1)) + minSalary;
-    obj.taxes = parseFloat((country.tax * obj.salary).toFixed());
-    obj.profit = parseFloat((obj.salary - obj.taxes).toFixed());
-    return obj
+function getMySalary( min, max ) {
+    let salary = Math.floor( min + Math.random() * ( max + 1 - min ));
+    let taxes  = salary * this.tax;
+    let profit = salary - taxes;
+    return console.log( 'My Salary: ', { salary, taxes, profit });
 }
-setInterval(() => console.log(getMySalary(litva)), 10000);
-
+let mySalary = getMySalary.bind( latvia, 1500, 2000);
+mySalary();
+setInterval( mySalary, 10000 );
