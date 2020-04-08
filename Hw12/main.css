@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('./image/dart.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+button, input, .character__block {
+    display: block;
+    outline: none;
+    color: #e01cff;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid #c63cff;
+    background: transparent;
+    margin-top: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+li {
+    display: block;
+}
+
+label {
+    color: #c184ff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.container {
+    margin-top: 20px;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.characters__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.character__block {
+    border-radius: 25px;
+    background: #ff5831;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
